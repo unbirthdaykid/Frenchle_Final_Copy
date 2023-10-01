@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAS PROJECT FRENCH PESTLE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://scribens.fr/API/scribens_api.js?lang=fr" data-name="scribens"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/home.html" id="navbar__logo"><img src="images/CAS.png" alt="pic">FRENCHLE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/listening.html" class="navbar__links">
+                        Listening
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/reading.html" class="navbar__links">
+                        Reading
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/writing.html" class="navbar__links">
+                        Writing
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/speaking.html" class="navbar__links">
+                        Speaking
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Mix Test Practices</h1>
+        <p>Here you will find a total of 2 full DELF preparation practice tests.</p>
+    </div>
+    <br><br>
+
+    <div class="center-box">
+    <h4>General Tips for DELF</h4>
+    <p>Here is the tips box. You will see information on this.</p>
+    </div>
+
+    <div class="nav-bar">
+    <div class="nav-item" onclick="changeTab(0)">Test 1</div>
+    <div class="nav-item" onclick="changeTab(1)">Test 2</div>
+    </div>
+
+    <div class="tab" id="tab0">
+        <hr>
+        <h2>
+          <div class="score" data-total="26"></div>
+        </h2>
+        <hr>
+        
+        <h2>Comprehension Orale</h2>
+        <div class="content">
+          <audio controls src="audio/listen1.mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <p>Audio 1: Click the play button to start the exercise. Remember: You can only listen twice!</p>
+        </div><br><br>
+
+        <form class="quiz">
+            <div class="question" data-answer="1">
+              <p><strong>1.Qu’est-ce que Charlotte a pensé de ses vacances ?</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Super</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Mauvaise</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Contente</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. Mauvaise</div>
+            </div>
+      
+            <div class="question" data-answer="1">
+              <p><strong>2. L’un des problèmes à l’hôtel était que :</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la chambre était trop petite.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>sa chambre n’était pas réservée.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>il n’y avait pas de salle de bain dans la chambre.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. sa chambre n’était pas réservée.</div>
+            </div>
+      
+            <div class="question" data-answer="2">
+              <p><strong>3.Ce que Charlotte a aimé, c’est…</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la taille de la piscine.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>la nourriture du restaurant.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>la gentillesse des autres voyageurs.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. la gentillesse des autres voyageurs.</div>
+            </div>
+      
+            <div class="question" data-answer="2">
+              <p><strong>4. Le personnel de l’hôtel n’était pas…</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>aimable.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>nombreux.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>expérimenté</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. expérimenté</div>
+            </div>
+      
+            <div class="question" data-answer="0">
+              <p><strong>5. Qui avait organisé les vacances de Charlotte ? </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Une agence de voyages. </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Paul</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Le personnel de l’hôtel</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>A. Une agence de voyages.</div>
+            </div>
+      
+            <div class="question" data-answer="1">
+              <p><strong>6. Paul est d’accord pour… </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>passer ses prochaines vacances avec Charlotte.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>aider Charlotte à organiser ses prochaines vacances.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>prêter sa maison à Charlotte pour les prochaines vacances. </div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. aider Charlotte à organiser ses prochaines vacances</div>
+            </div>
+
+            <br><br>
+
+            <div class="content">
+                <audio controls src="audio/listen2.mp3">
+                  Your browser does not support the audio element.
+                </audio> 
+                <p>Audio 2: Click the play button to start the exercise. Remember: You can only listen twice!</p>
+            </div>
+
+            <br><br>
+
+            <div class="question" data-answer="1">
+                <p><strong>1. De quelle sorte de site parle le journaliste ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Des sites pour des objets luxe.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Des sites pour donner des objets.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Des sites pour trouver l'amour.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Des sites pour donner des objets.</div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>2. Quels objets recherche-t-on particulièrement pour les enfants sur ces sites ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Des electroniques. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Des vetements. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Des jouets.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. Des jouets. </div>
+            </div>
+    
+            <div class="question" data-answer="0">
+                <p><strong>3. Que faut-il faire pour donner un objet sur le site Consoblog.com ? </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il faut passer une petite annonce.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il faut envoyer un e-mail.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il faut donner une objet. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Il faut passer une petite annonce. </div>
+            </div>
+    
+            <div class="question" data-answer="1">
+                <p><strong>4.Pour quelle raison principale donne-t-on ? </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Parce qu’on veut faire de l'argent. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Parce qu’on a envie de donner.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Parce que c'est bon pour l'environments. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Parce qu’on a envie de donner.</div>
+            </div>
+    
+            <div class="question" data-answer="0">
+                <p><strong>5. Le don des objets sur Internet rencontre beaucoup de succès auprès…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>des jeunes</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>des retraités.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>des femmes au foyer. </div>
+                <div class="answer"><strong>Correct Answer: </strong>A. Des jeunes. </div>
+            </div>
+    
+            <div class="question" data-answer="2">
+                <p><strong>6. La qualité du service du site Consoblog.com est garantie par…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la précision des descriptions des objets offerts.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>l’obligation de publier des photos dans les annonces.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>les notes mises par les personnes qui récupèrent les objets.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. les notes mises par les personnes qui récupèrent les objets. </div>
+            </div>
+
+            <br><br>
+            <div class="content">
+
+                <audio controls src="audio/listen3.mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <p>Audio 3: Click the play button to start the exercise. Remember: You can only listen twice!</p>
+      
+            </div>
+            <br><br>
+
+            <div class="question" data-answer="2">
+                <p><strong>1. Cette émission vise à… </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>informer les commerçants.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>critiquer les achats en ligne. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>conseiller les consommateurs.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. Conseiller les consommateurs. </div>
+            </div>
+    
+            <div class="question" data-answer="2">
+                <p><strong>2.Thierry Sagnier constate qu’Internet permet au consommateur... </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>de devenir lui-même vendeur. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>d’acheter sans perdre de temps. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de bénéficier de services gratuits.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. De bénéficier de services gratuits </div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>3. Que pense Thierry Sagnier des commerçants qui vendent à moitié prix ?  </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils donnent une mauvaise image de la qualité des produits</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils mettent des prix trop élevés à l’origine.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils préfèrent vendre sans bénéfices que ne pas vendre. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Ils mettent des prix trop élevés à l’origine. </div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>4.Pourquoi, selon Thierry Sagnier, certains articles sont-ils vendus chers ?  </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Parce que les vendeurs veulent être sûrs de gagner de l’argent.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Parce que les articles sont de bonne qualité. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Parce que la production coûte cher. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Parce que les vendeurs veulent être sûrs de gagner de l’argent.</div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>5. Thierry Sagnier donne un exemple de produit financé par la publicité. Lequel ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Les concerts publics</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Les films sur Internet.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Les journaux gratuits. </div>
+                <div class="answer"><strong>Correct Answer: </strong>C. Les journaux gratuits. </div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>6. Que font certains restaurants pour attirer les clients ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils augmentent la taille des portions</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils baissent leurs prix</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils offrent le repas aux enfants</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. Ils offrent le repas aux enfants </div>
+            </div>
+    
+            <div class="question" data-answer="2">
+                <p><strong>7. Selon Thierry Sagnier, pourquoi les supermarchés offrent-ils des produits gratuits à leurs
+                clients ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Pour faire revenir les clients</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Pour vendre n’importe quoi à n’importe quel prix</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>A et B </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. A et B</div>
+            </div>
+    
+            <div class="question" data-answer="1">
+                <p><strong>8. Que pense Thierry Sagnier des offres gratuites des supermarchés ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il faut en profiter.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il faut être prudent.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il faut s’assurer de la qualité du produit</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Il faut être prudent </div>
+            </div>
+
+            <h2>Comprehension Ecrite</h2><br><br>
+
+            <div class="content">
+                <p>
+                  Les personnes handicapées restent victimes de forts préjugés dans le monde du travail. La sixième Semaine
+                  pour l'emploi en leur faveur entend les combattre. Elle est marquée par une reprise de la polémique sur les
+                  Centres d'Aide par le Travail.
+                  <br><br>
+                  Aujourd'hui, 26% des personnes handicapées sont au chômage. En cause, selon beaucoup, les préjugés dont
+                  elles sont victimes. Préjugés que la neuvième semaine pour l'emploi en leur faveur, qui vient de débuter, entend
+                  combattre. L'Association pour la gestion du fonds pour l'insertion* professionnelle des personnes handicapées
+                  (Agefiph) et la Ligue pour l'Adaptation du diminué physique au travail (Adapt) veulent mobiliser autour du
+                  slogan
+                  "Agir, c'est réussir".
+                  <br><br>
+                  « Le handicap, lorsqu'il est visible est encore trop souvent associé à l'incompétence. La mobilisation est plus
+                  que
+                  jamais nécessaire pour modifier le regard sur le handicap », expliquent les deux associations. Aujourd'hui,
+                  rappellent-elles, « 215 000 personnes handicapées sont à la recherche d'un emploi et restent, en moyenne,
+                  deux fois plus longtemps sans activité ».
+                  <br><br>
+                  Pourtant, 87% des entreprises qui emploient des travailleurs handicapés s'en disent satisfaites et 62% des
+                  entreprises qui n'en emploient pas estiment qu'une telle expérience « pourrait se dérouler de manière
+                  satisfaisante », selon un sondage réalisé en vue de la semaine d'action. « On observe ainsi que le passage à
+                  l'acte est déterminant pour les chefs d'entreprises, puisqu'ils sont majoritairement satisfaits lorsqu'ils ont
+                  effectué
+                  une embauche* », a commenté le directeur général de l'Adapt, Philippe Velut. D'après des témoignages de chefs
+                  d'entreprise recueillis dans le Guide France Info Le salarié handicapé dans l'entreprise, ce dernier est « un
+                  salarié comme les autres, avec en plus, la volonté de s'en sortir ». Souvent « plus productif que les autres »,
+                  il
+                  crée un « effet fédérateur* dans une équipe de travail » où les petits problèmes courants sont « relativisés ».
+                  <br><br>
+                  La Semaine s'est ouverte lundi sur le parvis du Trocadéro à Paris, par un événement symbolique, en présence
+                  des adjointes pour les personnes handicapées au maire de Paris. Les Franciliens* sont invités par les
+                  organisateurs « à manifester leur soutien à l'intégration des personnes handicapées dans le monde du travail, en
+                  apposant l'empreinte colorée de leurs mains sur des livres géants ». Tout au long de la semaine, 16 régions se
+                  mobilisent et organisent près de 80 événements. Forums, tables rondes, pièces de théâtre, match de "torball"
+                  (football adapté) entre une équipe de déficients visuels et des chefs d'entreprise, tout sera bon pour « lever
+                  les
+                  freins psychologiques et culturels ». (…)
+                  <br><br>
+                  <i>Comité « tous ensemble au travail », novembre 2002.</i>
+                </p>
+            </div><br><br>
+            
+            <div class="question" data-answer="1">
+                <p><strong>1. Quel est le thème général de ce document ? </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Les conditions de travail
+                  des handicapés.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>La mobilisation pour
+                  l’emploi des personnes handicapées.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Les associations de
+                  défense des personnes handicapées.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. La mobilisation pour l’emploi des personnes handicapées.
+                </div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>2. Les travailleurs handicapés sont bien intégrés dans les entreprises où ils travaillent.</strong>
+                </p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>On ne sait pas</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Vrai. Justification : 87% des entreprises qui emploient
+                  des travailleurs handicapés s’en disent satisfaites</div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>3. Même si elles travaillent bien, les personnes handicapées sont moins performantes que les autres
+                    employés</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Vrai</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Faux</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>On ne sait pas</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Faux. Justification : le salarié handicapé est un
+                  salarié comme les autres, souvent plus productif que les autres.</div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>4. Qu’est-ce qui freine le développement de l’emploi des personnes handicapées ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Le manque d’information
+                  des chefs d’entreprise.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Une position de principe
+                  des chefs d’entreprise.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>La difficulté des chefs
+                  d’entreprise à prendre cette décision.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. La difficulté des chefs d’entreprise à prendre cette
+                  décision.</div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>5. Qui est invité à cette Semaine pour l’emploi ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Tous les Franciliens.
+                </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Seulement les
+                  personnalités politiques.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Seulement les personnes
+                  handicapées et les employeurs.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Tous les Franciliens.</div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>6. Qu’est-ce qui sera organisé au cours de cette Semaine spéciale ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Des ateliers de peinture.
+                </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Des rencontres sportives.
+                </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Des activités culturelles
+                  et sportives.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. Des activités culturelles et sportives.</div>
+            </div>
+        
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+      
+        </form>
+        
+
+        
+        <h2>Production Ecrite</h2>
+        <br><br>
+
+        <div class="content">
+            <p>
+              Vous travaillez dans une entreprise francophone. Votre collègue, qui occupe une fonction similaire, est partie en congé maternité et aucun remplacement n’est prévu. Vous écrivez à votre directeur en lui expliquant votre situation. Vous rappelez vos fonctions. Vous lui faites part de vos inquiétudes quant à votre charge de travail. Vous exposez votre point de vue dans un texte argumenté et illustré d’exemples précis. (250 mots environ).
+              <br><br><br>
+            </p>
+        </div>
+
+        <div id = 'grammar-checker'>
+            <textarea id="myTextarea" rows="10" oninput="adjustTextareaHeight(this)" placeholder="Type here and click on the button after finished..."></textarea>
+            <button type ='button' class="checker-btn" onclick="scribens_check('myTextarea', 'OJvbMnYc0t5lv8RrpQDn')">Check Grammar</button>
+        </div>
+        <br><br><br><br><br>
+
+        <h2>Production Orale</h2>
+        <br><br>
+
+        <div class="content">
+            <p>
+            You have 30 mins to prepare upon receiving the text. The following will be 5-7 monologue on your thoughts followed by an interactive exercise (answer the provided questions). Record your self speaking and evaluate wether you have met the requirements. 
+            </p>
+
+            <hr>
+            <h2>
+                Le rôle de l’université est-il de préparer à un métier ?
+            </h2>
+            <hr>
+            <hr>
+            <p>C’est ce que font les universités, de plus en plus. La professionnalisation est entrée dans les établissements
+                universitaires il y a une quinzaine d’années. Avant, ce souci de professionnalisation existait moins, mais il y
+                avait aussi moins d’élèves qui allaient à l’université.
+                Aujourd’hui, on est dans une logique d’insertion professionnelle imposée par la loi et cela se traduit par la
+                création d’un bureau d’insertion dans chaque université. De plus en plus, l’université ne fait que préparer à
+                un métier : elle ne devrait pas se limiter à cela.
+                Bien sûr, on a envie que les étudiants réussissent. Mais l’université n’est pas responsable si les étudiants
+                ne trouvent pas de travail ensuite. On dit : « Ils ont été mal formés. » L’université doit d’abord fournir une
+                culture et un bagage qui vont permettre aux diplômés de s’insérer, mais ce qui se passe après, en termes
+                d’insertion professionnelle, ce n’est plus du domaine de l’université.
+                D’après La voix du nord
+
+            (after)
+            Prompt 1: 
+            Prompt 2: 
+            </p>
+            <hr>
+        </div>
+
+        <div class="content">
+            <head>
+                <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+                <script src="https://markjivko.com/dist/recorder.js"></script>
+                <script>
+                    jQuery(document).ready(function () {
+                        var $ = jQuery;
+                        var myRecorder = {
+                            objects: {
+                                context: null,
+                                stream: null,
+                                recorder: null
+                            },
+                            init: function () {
+                                if (null === myRecorder.objects.context) {
+                                    myRecorder.objects.context = new (
+                                            window.AudioContext || window.webkitAudioContext
+                                            );
+                                }
+                            },
+                            start: function () {
+                                var options = {audio: true, video: false};
+                                navigator.mediaDevices.getUserMedia(options).then(function (stream) {
+                                    myRecorder.objects.stream = stream;
+                                    myRecorder.objects.recorder = new Recorder(
+                                            myRecorder.objects.context.createMediaStreamSource(stream),
+                                            {numChannels: 1}
+                                    );
+                                    myRecorder.objects.recorder.record();
+                                }).catch(function (err) {});
+                            },
+                            stop: function (listObject) {
+                                if (null !== myRecorder.objects.stream) {
+                                    myRecorder.objects.stream.getAudioTracks()[0].stop();
+                                }
+                                if (null !== myRecorder.objects.recorder) {
+                                    myRecorder.objects.recorder.stop();
+            
+                                    // Validate object
+                                    if (null !== listObject
+                                            && 'object' === typeof listObject
+                                            && listObject.length > 0) {
+                                        // Export the WAV file
+                                        myRecorder.objects.recorder.exportWAV(function (blob) {
+                                            var url = (window.URL || window.webkitURL)
+                                                    .createObjectURL(blob);
+            
+                                            // Prepare the playback
+                                            var audioObject = $('<audio controls></audio>')
+                                                    .attr('src', url);
+            
+                                            // Prepare the download link
+                                            var downloadObject = $('<a>&#9660;</a>')
+                                                    .attr('href', url)
+                                                    .attr('download', new Date().toUTCString() + '.wav');
+            
+                                            // Wrap everything in a row
+                                            var holderObject = $('<div class="row"></div>')
+                                                    .append(audioObject)
+                                                    .append(downloadObject);
+            
+                                            // Append to the list
+                                            listObject.append(holderObject);
+                                        });
+                                    }
+                                }
+                            }
+                        };
+            
+                        // Prepare the recordings list
+                        var listObject = $('[data-role="recordings"]');
+            
+                        // Prepare the record button
+                        $('[data-role="controls"] > button').click(function () {
+                            // Initialize the recorder
+                            myRecorder.init();
+            
+                            // Get the button state 
+                            var buttonState = !!$(this).attr('data-recording');
+            
+                            // Toggle
+                            if (!buttonState) {
+                                $(this).attr('data-recording', 'true');
+                                myRecorder.start();
+                            } else {
+                                $(this).attr('data-recording', '');
+                                myRecorder.stop(listObject);
+                            }
+                        });
+                    });
+                </script>
+            </head>
+            <body>
+                <div class="holder">
+                    <div data-role="controls">
+                        <button>START/STOP</button>
+                    </div>
+                    <div data-role="recordings"></div>
+                </div>
+            </body>
+        </div><br><br><br><br><br>
+    
+
+    </div>
+
+    <div class="tab" id="tab1">
+        <hr>
+        <h2>
+          <div class="score" data-total="26"></div>
+        </h2>
+        <hr>
+        
+        <h2>Comprehension Orale</h2>
+        <div class="content">
+            <audio controls src="audio/listen4.mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <p>Audio 1: Click the play button to start the exercise. </p>
+        </div><br><br>
+
+        <form class="quiz">
+            <div class="question" data-answer="1">
+                <p><strong>1. D’après le journaliste, on trouve souvent sur les réseaux sociaux des articles sur…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>l’intérêt de la course à pied.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>les avantages du sport matinal.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>le style de vie des sportifs professionnels.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Les avantages du sport matinal.  </div>
+              </div>
+    
+              <div class="question" data-answer="1">
+                <p><strong>2.Selon le document, il est … de modifier notre rythme de sommeil.  </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>bénéfique </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>dangereux  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>impossible </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Dangereux de modifier notre rythme de sommeil. </div>
+              </div>
+    
+              <div class="question" data-answer="1">
+                <p><strong>3.Quel rythme de vie adoptent les sportifs professionnels ?  </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils se lèvent très tôt. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils dorment beaucoup.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Ils font une sieste l’après-midi.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Ils dorment beaucoup. </div>
+              </div>
+              <div class="question" data-answer="0">
+                <p><strong>4.D’après le journaliste, les personnes qui se couchent tard sont plus … le soir. </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>actives  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>fatiguées </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>détendues </div>
+    
+                <div class="answer"><strong>Correct Answer: </strong>A. Actives le soir</div>
+              </div>
+        
+              <div class="question" data-answer="0">
+                <p><strong>5. Il est socialement bien vu de se lever tôt car cela permettrait d’être plus…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>efficace.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>ponctuel.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>en forme. </div>
+                <div class="answer"><strong>Correct Answer: </strong>A. Efficace.  </div>
+              </div>
+        
+              <div class="question" data-answer="0">
+                <p><strong>6. Faire du sport le matin est considéré comme un luxe car…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>tous les emplois ne le permettent pas.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>la vie de famille est parfois contraignante.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>on ne peut pas toujours en faire près de chez soi.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Tous les emplois ne le permettent pas. </div>
+              </div>
+    
+              <div class="question" data-answer="1">
+                <p><strong>7. La pratique du sport en fin de journée est avantageuse car elle permet…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>d’être de meilleure humeur.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de s’endormir plus facilement.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de mieux se concentrer le lendemain.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. De s’endormir plus facilement.</div>
+              </div>
+            <br><br>
+
+            <div class="content">
+                <audio controls src="audio/listen5.mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <p>Audio 2: Click the play button to start the exercise. </p>
+            </div>
+            <br><br>
+
+            <div class="question" data-answer="1">
+                <p><strong>1.L’entreprise américaine Google a lancé l’idée d’une nouvelle… </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>forme de réunion au travail.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>manière d’utiliser les bureaux.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>organisation du travail à distance.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Manière d’utiliser les bureaux.  </div>
+            </div>
+    
+            <div class="question" data-answer="1">
+                <p><strong>2.Dans l’entreprise Sanofi, la nouvelle organisation concerne…   </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>uniquement les chefs </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>les chefs et les employés.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>uniquement les employés. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Les chefs et les employés. </div>
+            </div>
+        
+          
+            <div class="question" data-answer="1">
+                <p><strong>3.Quel est l’objectif principal de cette organisation ?   </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Limiter les retards et l’absentéisme </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Améliorer l’utilisation des espaces de travail.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Créer des salles de réunion supplémentaires.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Améliorer l’utilisation des espaces de travail. </div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>4. Du fait de cette organisation, les employés… </strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>rentrent parfois travailler chez eux.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>louent des espaces pour travailler tranquillement.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>organisent leurs rendez-vous à l’extérieur de l’entreprise. </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Rentrent parfois travailler chez eux</div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>5. Chez les employés, cette organisation peut…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>entraîner des conflits.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>être source de fatigue.  </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>ediminuer la productivité. </div>
+                <div class="answer"><strong>Correct Answer: </strong>A. Entraîner des conflits.  </div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>6.Comment les employés les plus âgés réagissent-ils à ce système ?</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Ils protestent et refusent de l’adopter. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Ils s’adaptent même si ça ne leur plaît pas.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>IIs s’inquiètent pour leur avenir professionnel.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. IIs s’inquiètent pour leur avenir professionnel. </div>
+            </div>
+    
+            <div class="question" data-answer="2">
+                <p><strong>7. La journaliste estime que les hôtels de travail…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>facilitent la mise en place du travail à distance.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>renforcent les capacités d’adaptation des salariés.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>favorisent la confusion entre vie privée et vie professionnelle.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. Favorisent la confusion entre vie privée et vie professionnelle.</div>
+            </div>
+            <br><br>
+            
+            <div class="content">
+                <audio controls src="audio/listen6.mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <p>Click the play button to start the exercise. </p>
+            </div>
+            <br><br>
+
+            <hr>
+            <h2>
+              Document 1
+            </h2>
+            <hr>
+            <div class="question" data-answer="2">
+              <p><strong>1. Qu’est-ce qu’on constate dans l’évolution de la presse jeunesse actuellement ?</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>Il y a plus de titres pour tous les âges.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>Il y a plus de magazines de divertissement.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>Il y a plus d’importance donnée à l’information.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Il y a plus d’importance donnée à l’information.  </div>
+            </div>
+  
+            <div class="question" data-answer="2">
+              <p><strong>2.Selon Elsa Maudet, les nouveaux types de magazine vont … chez les jeunes.</strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>encourager l’écriture </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>promouvoir la lecture   </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>favoriser la réflexion sur l’actualité </div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Favoriser la réflexion sur l’actualité chez les jeunes.</div>
+            </div>
+
+            <hr>
+            <h2>
+              Document 2
+            </h2>
+            <hr>
+            <div class="question" data-answer="1">
+              <p><strong>1.Pour l’intervenant, les jeux de société permettent d’être…   </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>plus efficace au travail. </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>plus proche des autres.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>plus calme au quotidien.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. Plus proche des autres. </div>
+            </div>
+      
+            <div class="question" data-answer="2">
+              <p><strong>2.D’après l’intervenant, chez les plus jeunes, les jeux de société favorisent principalement… </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>leur intégration sociale.  </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>leur sensation de bien-être. </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>leur capacité de raisonnement. </div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>C. Leur capacité de raisonnement. </div>
+            </div>
+            
+            <hr>
+            <h2>
+              Document 3
+            </h2>
+            <hr>
+            <div class="question" data-answer="1">
+              <p><strong>1. Selon l’intervenante, un robot émotionnel est capable… </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>d’interpréter les émotions.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de provoquer des émotions.  </div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de manifester des émotions. </div>
+              <div class="answer"><strong>Correct Answer: </strong>B. Provoquer des émotions.   </div>
+            </div>
+      
+            <div class="question" data-answer="1">
+              <p><strong>2. Dans quel domaine les robots sont-ils bénéfiques pour les enfants ? </strong></p>
+              <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>La mobilité.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>L’apprentissage.</div>
+              <div class="answer-btn" onclick="selectAnswer(this, 2)">B. <span class="circle"></span>La communication.</div>
+      
+              <div class="answer"><strong>Correct Answer: </strong>B. L’apprentissage.  </div>
+            </div>
+
+            <h2>Comprehension Ecrite</h2><br><br>
+
+            <div class="content">
+                <p>
+                  Selon une étude, les élèves qui fréquentent des écoles où le téléphone est interdit ont de meilleurs résultats
+                  que les autres. Dernièrement, le ministre de l’éducation nationale a souhaité durcir l’interdiction des
+                  téléphones portables au collège qui existe déjà, mais qui, en pratique, n’est pas suffisamment appliquée
+                  parce qu’aucune sanction n’est prévue.
+                  <br><br>
+                  On semble oublier que le personnel en milieu scolaire applique déjà cette mesure, comme le rappelle
+                  Lysiane Gervais, secrétaire nationale du SNPDEN-Unsa* : « Dans 97 % des collèges, l’utilisation du portable
+                  est interdite. Cela fonctionne plus ou moins bien. Si un élève utilise son téléphone ou s’il sonne en cours,
+                  l’appareil est confisqué et remis aux parents ». Elle ajoute qu’une interdiction totale est « impossible à
+                  gérer. Quand on est sur le terrain, on s’en rend bien compte. »
+                  <br><br>
+                  De plus, les élèves ont des téléphones portables au collège car ils sont équipés par leurs parents qui
+                  veulent pouvoir joindre leur enfant après la classe, parce que ça les rassure. Selon le responsable d’une
+                  fédération de parents d’élèves, il y aurait autant de parents favorables à l’interdiction des téléphones
+                  portables qu’à leur autorisation. C’est pourquoi les modalités de cette interdiction doivent être discutées
+                  avec les familles.
+                  <br><br>
+                  Catherine Nave-Bekhti, secrétaire générale du Sgen-CFDT*, juge cette nouvelle interdiction inutile.
+                  « Ajouter de l’interdiction à l’interdiction ne dit pas comment on règle le problème. Tous les collèges
+                  ne sont pas équipés de casiers ». Cela nécessite des équipements et suffisamment de place. « L’autre
+                  élément est que certains enseignants développent un usage pédagogique des outils numériques. Un
+                  autre inconvénient à cette interdiction est le risque de priver les adolescents d’un apprentissage sur
+                  l’utilisation raisonnée d’Internet et des réseaux sociaux. Les enseignants font réfléchir leurs élèves quant
+                  à leur utilisation du numérique, aux conséquences de ce qu’ils y écrivent, au droit à l’image et au respect
+                  de l’autre. Les outils numériques contribuent à la formation des élèves. On aurait préféré une réflexion
+                  collective sur la place du numérique à l’école plutôt que de découvrir que le sujet serait à nouveau relancé,
+                  sans dialogue. Le ministère devrait ouvrir le débat à tous les acteurs de l’école. »
+                  <br><br>
+                  Pour certains enseignants, le débat dépasse celui de l’école : « Je parle des écrans avec les ados, je
+                  valorise la lecture de livres, mais le véritable problème c’est ce qui se passe à la maison » s’inquiète
+                  Jean-Thomas Giovannoni, professeur d’anglais, qui a lui-même grandi sans télévision. « Il faut que
+                  les parents apprennent à leurs enfants à garder une distance avec les écrans. »
+                  <br><br>
+                  <i>D’après Céline HUSSONNOIS-ALAYA, <a href="http://www.bmftv.com/" target="_blank"
+                      rel="noopener noreferrer">http://www.bmftv.com/</a></i>
+          
+                </p>
+            </div><br><br>
+            
+            <div class="question" data-answer="1">
+                <p><strong>1. Une enquête montre que l’usage du téléphone portable à l’école a des conséquences négatives sur
+                    _________ des jeunes.</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>la concentration</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>le niveau scolaire</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>les relations sociales</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Le niveau scolaire des jeunes.</div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>2. Selon Lysiane Gervais, dans l’intérêt des jeunes, il faudrait _________ le téléphone à
+                    l’école.</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>autoriser pleinement</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>tolérer sous conditions</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>interdire complètement</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Tolérer sous conditions le téléphone à l’école.</div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>3. Les parents seraient _________ l’utilisation du téléphone par les élèves à l’école.</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>très opposés à</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>plutôt partagés sur</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>globalement favorables à</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. Plutôt partagés sur l’utilisation du téléphone par les
+                    élèves à l’école.</div>
+            </div>
+        
+            <div class="question" data-answer="2">
+                <p><strong>4. Pour Catherine Nave-Bekhti, interdire le portable à l’école est difficile par manque… </strong>
+                </p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>de personnel.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de volonté politique.
+                </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>de moyens matériels.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>C. De moyens matériels.</div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>5. Selon Catherine Nave-Bekhti, interdire le portable à l’école…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>serait un obstacle aux
+                  libertés individuelles.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>priverait les élèves
+                  d’une éducation aux usages d’Internet. </div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>empêcherait les élèves de
+                  développer des relations sociales.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. priverait les élèves d’une éducation aux usages
+                  d’Internet.</div>
+            </div>
+        
+            <div class="question" data-answer="0">
+                <p><strong>6. Pour Catherine Nave-Bekhti, la question du numérique à l’école est…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>peu discutée.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>déjà dépassée.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>trop médiatisée.</div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>A. Peu discutée.</div>
+            </div>
+        
+            <div class="question" data-answer="1">
+                <p><strong>7. Pour Jean-Thomas Giovannoni, la question de l’usage du téléphone chez les jeunes relève
+                    principalement de la responsabilité…</strong></p>
+                <div class="answer-btn" onclick="selectAnswer(this, 0)">A. <span class="circle"></span>de l’école.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 1)">B. <span class="circle"></span>de la famille.</div>
+                <div class="answer-btn" onclick="selectAnswer(this, 2)">C. <span class="circle"></span>des jeunes eux-mêmes.
+                </div>
+        
+                <div class="answer"><strong>Correct Answer: </strong>B. de la famille.</div>
+            </div>
+        
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+      
+        </form>
+        
+
+        
+        <h2>Production Ecrite</h2>
+        <br><br>
+
+        <div class="content">
+            <p>
+              Vous avez lu dans un journal un reportage choquant sur les pratiques du service des ressources humaines d’une entreprise de luxe renommée. Cette entreprise fabrique des vêtements très chers à partir de produits bas de gamme. Vous écrivez au courrier des lecteurs du journal pour partager votre indignation et proposer des solutions.  ( 250 mots)  
+              <br><br><br>
+            </p>
+        </div>
+
+        <div id = 'grammar-checker'>
+            <textarea id="myTextarea" rows="10" oninput="adjustTextareaHeight(this)" placeholder="Type here and click on the button after finished..."></textarea>
+            <button type ='button' class="checker-btn" onclick="scribens_check('myTextarea', 'OJvbMnYc0t5lv8RrpQDn')">Check Grammar</button>
+        </div>
+        <br><br><br><br><br>
+
+        <h2>Production Orale</h2>
+        <br><br>
+
+        <div class="content">
+            <p>
+            You have 30 mins to prepare upon receiving the text. The following will be 5-7 monologue on your thoughts followed by an interactive exercise (answer the provided questions). Record your self speaking and evaluate wether you have met the requirements. 
+            </p>
+
+            <hr>
+            <h2>
+                Peut-on vivre sans télé ?
+            </h2>
+            <hr>
+            <hr>
+            <p>2 à 3% des Français refusent d’avoir la télé chez eux. Qui sont ces réfractaires du petit écran ? Bertrand
+                Bergier, sociologue, professeur à Nantes et à l’Université catholique de l’ouest, à Arradon, a mené une
+                enquête pour le découvrir.
+                En se lançant à la recherche de ces gens, Bertrand Bergier pensait découvrir une espèce en voie de
+                disparition. En fait, il a trouvé une espèce en voie de développement. Ce sociologue a enquêté auprès de
+                566 ménages et il en a tiré les grands types. D’abord, ceux qui refusent la télé « parce qu’elle symbolise la
+                perte des valeurs ou parce qu’elle est considérée comme un outil de manipulation politique », souligne-t-il.
+                Ensuite, ceux qui considèrent que la télé est dépassée : ce sont les adeptes de l’internet, les 25-35 ans.
+                Enfin, les « héritiers », nés avant 1955, qui n’ont jamais vu chez eux la télé et n’ont pas eu envie de s’équiper.
+                D’après Letelegramme.com
+
+            (after)
+            Prompt 1: 
+            Prompt 2: 
+            </p>
+            <hr>
+        </div>
+
+        <div class="content">
+            <head>
+                <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+                <script src="https://markjivko.com/dist/recorder.js"></script>
+                <script>
+                    jQuery(document).ready(function () {
+                        var $ = jQuery;
+                        var myRecorder = {
+                            objects: {
+                                context: null,
+                                stream: null,
+                                recorder: null
+                            },
+                            init: function () {
+                                if (null === myRecorder.objects.context) {
+                                    myRecorder.objects.context = new (
+                                            window.AudioContext || window.webkitAudioContext
+                                            );
+                                }
+                            },
+                            start: function () {
+                                var options = {audio: true, video: false};
+                                navigator.mediaDevices.getUserMedia(options).then(function (stream) {
+                                    myRecorder.objects.stream = stream;
+                                    myRecorder.objects.recorder = new Recorder(
+                                            myRecorder.objects.context.createMediaStreamSource(stream),
+                                            {numChannels: 1}
+                                    );
+                                    myRecorder.objects.recorder.record();
+                                }).catch(function (err) {});
+                            },
+                            stop: function (listObject) {
+                                if (null !== myRecorder.objects.stream) {
+                                    myRecorder.objects.stream.getAudioTracks()[0].stop();
+                                }
+                                if (null !== myRecorder.objects.recorder) {
+                                    myRecorder.objects.recorder.stop();
+            
+                                    // Validate object
+                                    if (null !== listObject
+                                            && 'object' === typeof listObject
+                                            && listObject.length > 0) {
+                                        // Export the WAV file
+                                        myRecorder.objects.recorder.exportWAV(function (blob) {
+                                            var url = (window.URL || window.webkitURL)
+                                                    .createObjectURL(blob);
+            
+                                            // Prepare the playback
+                                            var audioObject = $('<audio controls></audio>')
+                                                    .attr('src', url);
+            
+                                            // Prepare the download link
+                                            var downloadObject = $('<a>&#9660;</a>')
+                                                    .attr('href', url)
+                                                    .attr('download', new Date().toUTCString() + '.wav');
+            
+                                            // Wrap everything in a row
+                                            var holderObject = $('<div class="row"></div>')
+                                                    .append(audioObject)
+                                                    .append(downloadObject);
+            
+                                            // Append to the list
+                                            listObject.append(holderObject);
+                                        });
+                                    }
+                                }
+                            }
+                        };
+            
+                        // Prepare the recordings list
+                        var listObject = $('[data-role="recordings"]');
+            
+                        // Prepare the record button
+                        $('[data-role="controls"] > button').click(function () {
+                            // Initialize the recorder
+                            myRecorder.init();
+            
+                            // Get the button state 
+                            var buttonState = !!$(this).attr('data-recording');
+            
+                            // Toggle
+                            if (!buttonState) {
+                                $(this).attr('data-recording', 'true');
+                                myRecorder.start();
+                            } else {
+                                $(this).attr('data-recording', '');
+                                myRecorder.stop(listObject);
+                            }
+                        });
+                    });
+                </script>
+            </head>
+            <body>
+                <div class="holder">
+                    <div data-role="controls">
+                        <button>START/STOP</button>
+                    </div>
+                    <div data-role="recordings"></div>
+                </div>
+            </body>
+        </div><br><br><br><br><br>
+    
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
